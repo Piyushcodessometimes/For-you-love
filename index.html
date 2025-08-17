@@ -12,8 +12,15 @@
       background-size: cover ;
       text-align: center;
       background-repeat: no-repeat ;
+      background-position: center;
+      image-rendering: auto; /* lets browser use smooth scaling */
+    -webkit-backface-visibility: hidden; /* sometimes helps Safari/Chrome smoothness */
+    -webkit-transform: translate3d(0,0,0); /* triggers GPU acceleration for smoother rendering */
+      width: 100vw;                 
+      height: 100vh;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
     h1 {
       margin-top: 30px;
@@ -114,6 +121,7 @@
 
 </body>
 </html>
+
 
 
 
